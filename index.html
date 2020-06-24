@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Cruzaster</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.min.css" rel="stylesheet">
+
+  <link rel="icon" href="img/logo.png" type="image/png" sizes="16x16">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <img class="logo" src="img/logo.png">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Cruzaster</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Protocol</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#signup">Social Media</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Header -->
+  <header class="masthead">
+
+    <div class="container d-flex h-100 align-items-center">
+      <h4 class="text-white-50">Fire Hazard Locations</h4>
+      <div class="mx-auto text-center"></div>
+
+
+
+      <!DOCTYPE html>
+<html>
+  <head>
+
+    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+        border: 5px solid #517853;
+        min-height:250px;
+       }
+
+
+    </style>
+  </head>
+
+  <body>
+    <!--The div element for the map -->
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrsJxg8E-zOnaC2_KxQLtcLW-LQO80g1c&callback=initMap">
+    </script>
+
+    <div id="map"></div>
+    <script>
+
+    function initMap() {
+      var sc = {lat: 37.0454, lng: -121.9580};
+      var la = {lat: 34.0522, lng: -118.2437};
+      var mont = {lat: 36.3136, lng: -121.3542}
+      var sb = {lat: 34.4208, lng: -119.6982}
+      var sonoma = {lat: 38.5780, lng: -122.98882}
+
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 6,
+        center: la
+      });
+
+      var marker = new google.maps.Marker({
+        position: sc,
+        map: map,
+        title: 'Santa Cruz'
+      });
+
+      var marker2 = new google.maps.Marker({
+        position: mont,
+        map: map,
+        title: 'Monterey'
+      });
+
+      var marker3 = new google.maps.Marker({
+        position: sb,
+        map: map,
+        title: 'Santa Barbara'
+      });
+
+      var marker3 = new google.maps.Marker({
+        position: la,
+        map: map,
+        title: 'Los Angeles'
+      });
+
+      var marker3 = new google.maps.Marker({
+        position: sonoma,
+        map: map,
+        title: 'Sonoma'
+      });
+
+
+    }
+
+
+    </script>
+
+  </body>
+</html>
+
+
+
+
+
+      <head>
+
+  </header>
+
+
+
+
+
+
+  <!-- About Section -->
+  <section id="about" class="about-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-white mb-4">About Our Efforts at Cruzaster</h2>
+          <p class="text-white-50">Over the past day we've been growing our company, and the appreciation and importance of fire safety.</p>
+          <p class="text-white-50">We have built a prototype that shows you where there is a fire and we also show areas where
+            people can take shelter in case of an emergency.</p>
+          <p class="text-white-50">You can either offer to provide a safe house for someone affected by the fire or you can
+            look at our map to find a safe space for you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section bg-light">
+    <div class="container">
+
+      <!-- Featured Project Row -->
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-xl-8 col-lg-7">
+        </div>
+        <div class="col-xl-4 col-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>Wildfire Action Protocol</h4>
+            <p class="text-black-50 mb-0">Find the right actions to prepare you and your family for the next California wildfire.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project One Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/tree.jpg" alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+
+
+                <h4 class="text-white">Keep Up With Updates!</h4>
+                <p class="mb-0 text-white-50">Stay up to date with the latest emergency information from our alert system. Sign up for our alerts using your email!
+                Search out nearest accessible shelters in the vicinity of your address.</p>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Two Row -->
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/wildin.jpeg" alt="">
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">Safety Tips</h4>
+                <p class="mb-0 text-white-50">Store all important documents in a safe place or a fireproof container.</p>
+                <p class="mb-0 text-white-50">Make evacuation plans with family members. Talk through several options including an outside meeting place and an emergency contact person.</p>
+                <p class="mb-0 text-white-50">Keep battery operated radios and flashlights, along with additional fresh batteries on hand.</p>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Signup Section -->
+
+
+  <!-- Contact Section -->
+  <section class="contact-section bg-black">
+    <div class="container">
+
+
+
+
+
+
+      <div class="social d-flex justify-content-center">
+        <a href="https://twitter.com/cruzhacks?lang=en" class="mx-2">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/CruzHacks/" class="mx-2">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/cruzhacks/?hl=en" class="mx-2">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy; Cruzaster 2020
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>
+
+
+
+</body>
+
+</html>

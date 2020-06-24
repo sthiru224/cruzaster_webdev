@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Cruzaster</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.min.css" rel="stylesheet">
+
+  <link rel="icon" href="img/logo.png" type="image/png" sizes="16x16">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <img class="logo" src="img/logo.png">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html">Cruzaster</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead">
+
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center"></div>
+
+<html>
+  <head>
+
+    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 50%;  /* The width is the width of the web page */
+        border: 5px solid #517853;
+        min-height:250px;
+       }
+
+       div.background {
+  background: url(klematis.jpg) repeat;
+}
+
+div.transbox {
+  margin: 90px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+  margin: 0%;
+  font-weight: bold;
+  color: #000000;
+}
+
+#button {
+  background-color: #FFFFFF; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+    </style>
+  </head>
+
+  <body>
+    <!--The div element for the map -->
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrsJxg8E-zOnaC2_KxQLtcLW-LQO80g1c&callback=initMap">
+    </script>
+
+    <div id="map"></div>
+    <script>
+
+    function initMap() {
+      var sc = {lat: 37.0454, lng: -121.9580};
+      var la = {lat: 34.0522, lng: -118.2437};
+      var mont = {lat: 36.3136, lng: -121.3542}
+      var sb = {lat: 34.4208, lng: -119.6982}
+      var sonoma = {lat: 38.5780, lng: -122.98882}
+
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 6,
+        center: la
+      });
+
+      var marker = new google.maps.Marker({
+        position: sc,
+        map: map,
+        title: 'Santa Cruz'
+      });
+
+      var marker2 = new google.maps.Marker({
+        position: mont,
+        map: map,
+        title: 'Monterey'
+      });
+
+      var marker3 = new google.maps.Marker({
+        position: sb,
+        map: map,
+        title: 'Santa Barbara'
+      });
+
+      var marker3 = new google.maps.Marker({
+        position: la,
+        map: map,
+        title: 'Los Angeles'
+      });
+
+      var marker3 = new google.maps.Marker({
+        position: sonoma,
+        map: map,
+        title: 'Sonoma'
+      });
+
+    }
+
+
+    </script>
+    <div class="background">
+      <div class="transbox">
+        <p>Santa Cruz County</p>
+        <p>Available!</p>
+        <p>1123 Cruzaster Drive, Santa Cruz, CA</p>
+        <br>
+        <button type="button">Select</button>
+      </div>
+      <div class="transbox">
+        <p>Los Angeles County</p>
+        <p>Available!</p>
+        <p>1257 CorgiButt Drive, Los Angeles, CA</p>
+        <br>
+        <button type="button">Select</button>
+      </div>
+      <div class="transbox">
+        <p>San Diego County</p>
+        <p>Available!</p>
+        <p>4598 Triton Parkway, San Diego, CA</p>
+        <br>
+        <button type="button">Click Me!</button>
+      </div>
+    </div>
+  </body>
+</html>
